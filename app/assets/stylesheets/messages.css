@@ -1,0 +1,43 @@
+.wrapper {
+  display: flex;
+}
+
+.side-bar {
+  width: 300px;
+  height: 100vh;
+}
+
+.left-header {
+  height: 100px;
+  background-color: #253141;
+  padding: 0 20px;
+}
+
+.chat-lists {
+  height: calc(100vh - 100px);
+  background-color: #2f3e51;
+  padding: 0 20px;
+}
+
+.main-chat {
+  width: calc(100vw - 300px);
+  padding: 0 40px;
+}
+
+.right-header {
+  height: 100px;
+  background-color: #ffffff;
+  padding: 0 40px;
+}
+
+.container {
+  height: calc(100vh - 190px);
+  background-color: #fafafa;
+  padding: 46px 40px 0;
+}
+
+.message-area {
+  height: 90px;
+  background-color: #dddddd;
+  padding: 20px 40px;
+}
