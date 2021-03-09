@@ -1,6 +1,8 @@
 <div class="left-header">
   <div class= "user-name">
-    <a href="#">Kyota</a>
+    <%= link_to current_user.name, edit_user_path(current_user) %>
+    <!--<%= link_to "#{current_user.name}", edit_user_path(current_user.id), method: :get %>
+-->
   </div>
   <div class="new-chat">
     <a href="#">チャットを作成する</a>
