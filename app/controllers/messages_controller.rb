@@ -12,7 +12,7 @@ class MessagesController < ApplicationController
       redirect_to room_messages_path(@room)
     else
       @messages = @room.messages.includes(:user)
-      reder :index
+      render :index
       #renderはindexアクションを経由していないため、createアクションの中でも@messagesの定義が必要になる
     end
   end
