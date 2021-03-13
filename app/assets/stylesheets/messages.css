@@ -116,7 +116,8 @@
 }
 
 .message-form {
-  background-color: white;
+  background-color: lightgray;
+  padding: 20px;
   display: flex;
   width: 100%;
 }
@@ -151,4 +152,9 @@
 
 .hidden {
   display: none;
+}
+
+.form-input {
+  width: 100%;
+  display: flex;
 }

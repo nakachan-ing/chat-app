@@ -6,6 +6,7 @@
 </div>
 
 <div class="container">
+  <!--
   <div class="content">
     <div class="info">
       <div class="user">Kyota</div>
@@ -20,6 +21,8 @@
     </div>
     <div class="text">これもテストです</div>
   </div>
+  -->
+  <%= render partial: 'message', collection: @messages %>
 </div>
 
 <!--
@@ -35,13 +38,13 @@
   <input type="submit" value="送信" class="send">
 </div>
 -->
-<%= form_with model: [@room, @message], class: 'form', local: true do |f| %>
+<%= form_with model: [@room, @message], class: 'message-form', local: true do |f| %>
   <div class="form-input">
-    <%= f.text_field :content, class: 'form-message', placeholder: 'type a message' %>
+    <%= f.text_field :content, class: 'text-form', placeholder: 'type a message' %>
     <label class="form-image">
       <span class="image-file">画像</span>
       <%= f.file_field :image, class: 'hidden' %>
     </label>
   </div>
-  <%= f.submit '送信', class: 'form-submit' %>
+  <%= f.submit '送信', class: 'send' %>
 <% end %>
